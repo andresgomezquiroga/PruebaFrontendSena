@@ -7,7 +7,7 @@ Una aplicación React sencilla para buscar y registrarse en programas de formaci
 ### 1. Clonar el repositorio
 ```bash
 git clone https://github.com/tu-usuario/programas-formacion.git
-cd programas-formacion
+cd PruebaFrontendSena
 ```
 
 ### 2. Instalar dependencias
