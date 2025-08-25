@@ -45,6 +45,7 @@ npm run dev
 src/
 ├── components/        # Componentes reutilizables
 ├── data/             # Datos de los programas
+├── hooks/             # Estados Locales, logica de busqueda
 ├── App.tsx           # Componente principal
 └── main.tsx          # Punto de entrada
 ```
