@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# 🎓 Programas de Formación App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Una aplicación React sencilla para buscar y registrarse en programas de formación académica.
 
-Currently, two official plugins are available:
+## 🚀 Instalación rápida
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 1. Clonar el repositorio
+```bash
+git clone https://github.com/tu-usuario/programas-formacion.git
+cd programas-formacion
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### 2. Instalar dependencias
+```bash
+npm i
 ```
+
+### 3. Ejecutar la aplicación
+```bash
+npm run dev
+```
+
+¡Listo! La aplicación estará disponible en `http://localhost:5173`
+
+---
+
+## 📋 Características
+
+- ✅ Buscar programas por nombre
+- ✅ Filtrar por modalidad (Presencial, Virtual, Mixta)
+- ✅ Registro en programas
+- ✅ Interfaz responsive
+- ✅ Feedback visual para el usuario
+
+## 🛠️ Tecnologías
+
+- **React 18** - Framework frontend
+- **TypeScript** - Tipado estático
+- **Vite** - Herramienta de desarrollo
+- **Tailwind CSS** - Estilos
+
+## 📁 Estructura del proyecto
+
+```
+src/
+├── components/        # Componentes reutilizables
+├── data/             # Datos de los programas
+├── App.tsx           # Componente principal
+└── main.tsx          # Punto de entrada
+```
+
+---
+
+**¿Problemas?** Asegúrate de tener Node.js instalado (versión 16 o superior)
